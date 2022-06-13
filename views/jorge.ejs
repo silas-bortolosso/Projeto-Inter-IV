@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pagina_2.css" />
+    <link
+      rel="stylesheet"
+      href="href='https://fonts.googleapis.com/css?family=Rubik'"
+    />
+    <!-- Bootstrap 3 -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+    ></script>
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6">
+                <h1><img class="ajuste-imagem" src=<%= aArtista[6].LINK %> alt=""></h1>
+            </div>
+            
+               <div class="col-sm-6 borda">
+                <h1 class="nome"><%= aArtista[6].artista %></h1>
+                <p class="subtitulo">Bibliografia:</p>
+                <p class="bibliografia"><%= aArtista[6].bibliografia %></p>
+
+                
+                  <p class="subtitulo2">Ouvintes:</p>
+                  <p class="ouvintes"><%= aArtista[6].ouvintes %></p>
+                  <p class="subtitulo2">Local:</p>
+                  <p class="local"><%= aArtista[6].local_fund %></p>
+               
+               </div>
+                
+            
+        </div>
+    </div>
+</body>
+</html>

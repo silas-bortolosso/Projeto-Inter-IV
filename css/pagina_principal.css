@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    background-image: url('menina_feliz2.png');
+    background-repeat: no-repeat;
+    width: 100%;
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+button{
+    width: 500px;
+    height: 50px;
+    border: none;
+    outline: none;
+    background: #2dcee7;
+    color: #fff;
+    font-size: 22px;
+    border-radius: 40px;
+    text-align: left;
+    box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+
+
+
+svg path{
+    stroke-width: 3;
+    stroke: #fff;
+    stroke-dasharray: 34;
+    stroke-dashoffset: 34;
+    stroke-linecap: round;
+}
+
+.active{
+    background: #ff2b75;
+    transition: 1s;
+}
+
+.cor-texto-botao{
+    color: #fff;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.active p{
+    transition: 1s;
+    text-align: center;
+}
+
+.active svg path{
+    stroke-dashoffset: 0;
+    transition: 1s;
+    transition-delay: 1s;
+}
+
+#pesquisa{
+    padding-top: 300px;
+    padding-left: 70px;
+}
+
+input{
+    background: 0;
+    border: 0;
+    outline: none;
+    padding-left: 10px;
+    color: white;
+}
+
+::-webkit-input-placeholder{
+    color: rgb(255, 255, 255);
+}
+
+::placeholder{
+  color: #ffff
+  ;
+}
+
+#menina{
+    width: 100%;
+    padding-top: 150px;
+    padding-right: 0px;
+}
+
+#vao-botao{
+    padding-top: 20px;
+}
+
+#titulo{
+    left: 0px;
+    font-size: 75px;
+    color: white;
+}
+
+:root {
+    --offset: 6px;
+  }
+  .mask {
+    font-size: 60px;
+    height: 106px;
+    position: relative;
+    overflow: hidden;
+    margin-top: var(--offset);
+  }
+  
+  .mask span {
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+  
+    background-size: 100% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+  }
+  
+  .mask span[data-show] {
+    transform: translateY(-100%);
+    transition: 0.5s transform ease-in-out;
+  }
+  
+  .mask span[data-up] {
+    transform: translateY(-200%);
+    transition: 0.5s transform ease-in-out;
+  }
+  
+  .mask span:nth-child(1) {
+    background-image: linear-gradient(45deg, #0ecffe 50%, #07a6f1);
+  }
+  
+  .mask span:nth-child(2) {
+    background-image: linear-gradient(45deg, #18e198 50%, #0ec15d);
+  }
+  
+  .mask span:nth-child(3) {
+    background-image: linear-gradient(45deg, #8a7cfb 50%, #633e9c);
+  }
+  
+  .mask span:nth-child(4) {
+    background-image: linear-gradient(45deg, #fa7671 50%, #f45f7f);
+  }
+
+.link_procurar{
+  color: #fff;
+  text-decoration: none;
+}
+
+.estilo_retorno{
+  color: #fff;
+}

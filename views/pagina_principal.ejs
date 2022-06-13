@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="pagina_principal.css" />
+    <link
+      rel="stylesheet"
+      href="href='https://fonts.googleapis.com/css?family=Rubik'"
+    />
+    <!-- Bootstrap 3 -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+    ></script>
+    <link rel="javascript" href="captura.js">
+  </head>
+  <body>
+   
+    
+   
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6">
+        </div>
+        <div id="pesquisa" class="col-sm-4">
+          
+          <h1 id="titulo">Procure por seu artista favorito</h1>
+          
+         
+          <div id="vao-botao">
+            <button id="btn" type="submit" >
+              <p class="cor-texto-botao" id="btnText"><a class="link_procurar" href="/artistas">Todos artistas</a></p>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      var capturando = "";
+
+      function capturar(){
+      capturando = document.getElementById('valor').value;
+      document.getElementById('valorDigitado').innerHTML = capturando;
+}
+
+      setInterval(function () {
+        const show = document.querySelector("span[data-show]");
+        const next =
+          show.nextElementSibling || document.querySelector("span:first-child");
+        const up = document.querySelector("span[data-up]");
+
+        if (up) {
+          up.removeAttribute("data-up");
+        }
+
+        show.removeAttribute("data-show");
+        show.setAttribute("data-up", "");
+
+        next.setAttribute("data-show", "");
+      }, 3000);
+    </script>
+  </body>
+</html>
