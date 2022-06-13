@@ -27,5 +27,5 @@ Rodar somente o arquivo raspagem.py
 
 ## 2. Para executar o codigo
 
-Executar o comando no terminal:
+Executar o comando no terminal:<br>
 node index.js
